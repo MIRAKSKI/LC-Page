@@ -227,3 +227,4 @@ function jumponit(sesk) {
     }
   }
 }
+//finshed
