@@ -93,20 +93,18 @@ function screenCheck() {
   var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
   if (agentID || $(window).width() <= 930) {
     // its mobile screen
+    document.getElementById("navbar").style.left = "-100%";
     $.scrollify.destroy();
     $('section').removeClass('scroll').removeAttr('style');
     $.scrollify.disable();
-    //document.getElementsByClassName("normalx")[0].style.display = "none";
-    //document.getElementsByClassName("abnormalx")[0].style.display = "grid";
     document.getElementsByClassName('pagination')[0].style.display = "none";
   } else {
     // its desktop
     $('section').addClass('scroll');
     applyScroll();
     $.scrollify.enable();
-    //document.getElementsByClassName("normalx")[0].style.display = "flex";
-    //document.getElementsByClassName("abnormalx")[0].style.display = "none";
     document.getElementsByClassName('pagination')[0].style.display = "grid";
+    document.getElementById("navbar").style.left = "0";
   }
 }
 // Get the button
@@ -124,13 +122,15 @@ function scrollFunction() {
   var currentScrollPos = window.pageYOffset;
   if ($(window).width() > 930) {
     if (prevScrollpos > currentScrollPos) {
-      document.getElementById("navbar").style.top = "0";
+      document.getElementById("navbar").style.top = "0%";
     }
     else {
       document.getElementById("navbar").style.top = "-12%";
     }
   }
-  openhdr(1)
+  if ($(window).width() < 930) {
+    openhdr(1)
+  }
   prevScrollpos = currentScrollPos;
 }
 
