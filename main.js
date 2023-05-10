@@ -130,7 +130,8 @@ function scrollFunction() {
       document.getElementById("navbar").style.top = "-12%";
     }
   }
-prevScrollpos = currentScrollPos;
+  openhdr(1)
+  prevScrollpos = currentScrollPos;
 }
 
 function clemail() {
