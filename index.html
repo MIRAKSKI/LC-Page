@@ -9,26 +9,37 @@
 		/>
 		<title>AIESEC IN OUARGLA</title>
 		<meta name="description" content="AIESEC is aglobal platform for young people to develop their leadership, Aiesec in OUARGLA Game Changing" />
-		<meta name="keywords" content="Aiesec in Ouargla, Aiesec in algeria, ouargla, aiesec, leadership, skills, volunteer, teach, talent, global, abroad" />
+		<meta name="keywords" content="Aiesec in Ouargla, Aiesec in algeria, ouargla, aiesec, leadership, skills, volunteer, teach, talent, global, abroad, LC, LC ourgla" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:title" content="AIESEC IN OUARGLA">
+    <meta name="og:description" content="AIESEC is aglobal platform for young people to develop their leadership, Aiesec in OUARGLA Game Changing">
+    <meta name="og:image" content="pic/2.png">
 		<link rel="stylesheet" href="masterials.css">
-		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="main-4.css">
+		<link rel="stylesheet" href="main-1.css">
+		<link rel="stylesheet" href="main-2.css">
+		<link rel="stylesheet" href="main-3.css">
 		<link rel="icon" href="pic/2.png">
 	</head>
 	<body>
 		<div class="body"></div>
 		<div class="bodx"></div>
-		<button onclick="scrooll(1)" id="myBtn" title="Go to top">Top</button>
+		<input type="button" class="testview" value="test">
+		<button onclick="scrooll(1);topFunction();" id="myBtn" title="Go to top">Top</button>
+		<div class="headeropen" onclick="openhdr(2)">
+			<input type="button" id="opennevbr" value="Ξ">
+		</div>
 		<div class="header" id="navbar">
-			<div><a href="https://aiesec.org/"><img src="pic/1.png" alt="Aiesec in Ouargla" height="32"></a></div>
-			<div><input type="button" class="navbtns" onclick="scrooll(2)" value="AIESEC?"></div>
-			<div><input type="button" class="navbtns" onclick="scrooll(3)" value="Our Products"></div>
-			<div><input type="button" class="navbtns" onclick="scrooll(4)" value="GV"></div>
-			<div><input type="button" class="navbtns" onclick="scrooll(5)" value="GTa"></div>
-			<div><input type="button" class="navbtns" onclick="scrooll(6)" value="Global Teacher"></div>
-			<div><input type="button" class="navbtns" onclick="scrooll(7)" value="AIESEC Member"></div>
-			<div><input type="button" class="navbtns" onclick="scrooll(8)" value="Our Structure"></div>
-			<div><input type="button" class="navbtns" onclick="scrooll(9)" value="Contact Us"></div>
-			<div><input type="button" class="navbtns" onclick="scrooll(10)" value="Follow US"></div>
+			<div><a href="https://aiesec.org/" target="_blank"><img src="pic/1.png" alt="Aiesec in Ouargla" height="32"></a></div>
+			<div><input type="button" class="navbtns" onclick="scrooll(2);jumponit(2)" value="AIESEC?"></div>
+			<div><input type="button" class="navbtns" onclick="scrooll(3);jumponit(3)" value="Our Products"></div>
+			<div><input type="button" class="navbtns" onclick="scrooll(4);jumponit(4)" value="GV"></div>
+			<div><input type="button" class="navbtns" onclick="scrooll(5);jumponit(5)" value="GTa"></div>
+			<div><input type="button" class="navbtns" onclick="scrooll(6);jumponit(6)" value="GTe"></div>
+			<div><input type="button" class="navbtns" onclick="scrooll(7);jumponit(7)" value="AIESEC Member"></div>
+			<div><input type="button" class="navbtns" onclick="scrooll(8);jumponit(8)" value="Our Structure"></div>
+			<div><input type="button" class="navbtns" onclick="scrooll(9);jumponit(9)" value="Contact Us"></div>
+			<div><input type="button" class="navbtns" onclick="scrooll(10);jumponit(10)" value="Follow US"></div>
 		</div>
 		<ul class="pagination">
 			<li>
@@ -54,12 +65,12 @@
 			<li>
 			<li>
 				<a class="" href="#s-five">
-					<span class="hover-text">Global Talent</span>
+					<span class="hover-text">GTa</span>
 				</a>
 			</li>
 			<li>
 				<a class="" href="#s-six">
-					<span class="hover-text">Global Teacher</span>
+					<span class="hover-text">GTe</span>
 				</a>
 			</li>
 			<li>
@@ -84,51 +95,50 @@
 			</li>
 		</ul>
 
-		<section class="scroll s-one" data-section-name="s-one">
+		<section onclick="openhdr(1)" class="scroll s-one" data-section-name="s-one" id="s-one">
 			<div class="container" style="background:rgba(3, 126, 243, 0.5)">
 				<div class="content-a" style="text-align:left;width:65%;">
 					</br></br>
-					<p style="font-size:45px;font-weight: bold;">AIESEC IN OUARGLA</p>
-					<p style="font-size:25px;">AIESEC provides the opportunity for young people to challenge themselves, develop their leadership skills, and make a positive impact on the world - all while being part of a global community that shares their passion for change.</p>
+					<p class="fontheader">AIESEC IN OUARGLA</p>
+					<p>AIESEC provides the opportunity for young people to challenge themselves, develop their leadership skills, and make a positive impact on the world - all while being part of a global community that shares their passion for change.</p>
 					<p class="parafooter" style="font-weight: bold;">"If you can dream it, you can achieve it." - Zig Ziglar</p>
 				</div>
 			</div>
 		</section>
 
-		<section class="scroll s-two" data-section-name="s-two">
+		<section onclick="openhdr(1)" class="scroll s-two" data-section-name="s-two" id="s-two">
 			<div class="container">
 				<div class="row" style="text-align:left;">
 					<div class="col-lg-12">
-						<p style="font-size:45px;font-weight:bold;">The AIESEC way</p>
-						<p style="font-size:25px;">AIESEC is aglobal platform for young people to develop their leadership potential through practical experiencesof many kinds, including internships, volunteering opportunities, and more.
+						<p class="fontheader">The AIESEC way</p>
+						<p>AIESEC is aglobal platform for young people to develop their leadership potential through practical experiencesof many kinds, including internships, volunteering opportunities, and more.
 							Founded in 1948, AIESEC is a non-governmental and not-for-profit organization entirely run by youth for youth.</p>
-						<p style="font-size:25px;"></p>
+						<p></p>
 						<p class="parafooter" style="color:rgb(3, 126, 243)">We stand for <b>PEACE</b> <br/>We stand against <b>WAR</b></p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="scroll s-three" data-section-name="s-three">
+		<section onclick="openhdr(1)" class="scroll s-three" data-section-name="s-three" id="s-three">
 			<div class="container">
 				<div class="row" style="text-align:left;">
-					<div class="col-lg-12">
-						<p style="font-size:45px;font-weight:bold;">Our Products</p>
-						<p style="opacity:0;margin:0;padding:0;">AIESEC is aglobal platform for young people to develop their leadership potential through practical experiencesof many kinds, including internships, volunteering opportunities, and more.</p>
+					<div class="col-lg-12" style="width:100%;margin:0;padding:0;">
+						<p class="fontheader" style="margin-bottom:3rem;">Our Products</p>
 						<div style="width: 100%;height: 100%;display:flex;justify-content:space-around;">
-							<div class="GV"  onclick="scrooll(4)">
+							<div class="GV"  onclick="scrooll(4);jumponit(4);">
 								<img src="pic/6.png" alt=""width="100%" style="opacity:0;">
 								<div class="OGX-1">
 									<p class="pro-text"><b>Global Volunteer</b></p>
 								</div>
 							</div>
-							<div class="GTa" onclick="scrooll(5)">
+							<div class="GTa" onclick="scrooll(5);jumponit(5);">
 								<img src="pic/4.png" alt=""width="100%" style="opacity:0;">
 								<div class="OGX-2">
 									<p class="pro-text"><b>Globl Talent</b></p>
 								</div>
 							</div>
-							<div class="GTe" onclick="scrooll(6)">
+							<div class="GTe" onclick="scrooll(6);jumponit(6);">
 								<img src="pic/5.png" alt=""width="100%" style="opacity:0;">
 								<div class="OGX-3">
 									<p class="pro-text"><b>Global Teacher</b></p>
@@ -140,78 +150,74 @@
 			</div>
 		</section>
 
-		<section class="scroll s-foor" data-section-name="s-foor">
+		<section onclick="openhdr(1)" class="scroll s-foor" data-section-name="s-foor" id="s-foor">
 			<div class="container">
 				<div class="row" style="text-align:left;">
 					<div class="col-lg-12">
-						<p style="font-size:45px;font-weight:bold;margin:0;padding:0;">Global Volunteer</p>
-						<p style="opacity:0;margin:0;padding:0;">h practical experiencesof many kinds, including internships, volunteering opportunities, and more.</p>
-						<p style="font-size:25px;">Volunteering offers numerous benefits, both for the community and for the volunteers themselves. By volunteering, individuals can make a positive impact on their local community and develop new skills, such as leadership, teamwork, and problem-solving. It's also a great way to explore new interests and hobbies and build one's network of contacts. Finally, volunteering can provide a sense of fulfillment and purpose, and help individuals appreciate the blessings they have.</p>
-						<p style="font-size:25px;">We have partnership with Turkey, Egypt and Bahrain</p>
-						<p style="font-size:25px;">Explore more opportunity from the link below:</p>
+						<p class="fontheader" style="margin-bottom:2rem;margin:0;padding:0;">Global Volunteer</p>
+						<p>Volunteering offers numerous benefits, both for the community and for the volunteers themselves. By volunteering, individuals can make a positive impact on their local community and develop new skills, such as leadership, teamwork, and problem-solving. It's also a great way to explore new interests and hobbies and build one's network of contacts. Finally, volunteering can provide a sense of fulfillment and purpose, and help individuals appreciate the blessings they have.</p>
+						<p>We have partnership with Turkey, Egypt and Bahrain</p>
+						<p>Explore more opportunity from the link below:</p>
 						<input class="GV-btn" type="button" onclick="window.open('https://aiesec.org/global-volunteer', '_blank')" value="Explore Volunteering">
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="scroll s-five" data-section-name="s-five">
-			<div class="container" style="padding:0;">
+		<section onclick="openhdr(1)" class="scroll s-five" data-section-name="s-five" id="s-five">
+			<div class="container">
 				<div class="row" style="text-align:left;">
 					<div class="col-lg-12">
-						<p style="font-size:45px;font-weight:bold;margin:0;padding:0;">Global Talent</p>
-						<p style="opacity:0;margin:0;padding:0;">h practical experiencesof many kinds, including internships, volunteering opportunities, and more.</p>
-						<p style="font-size:25px;">Internships provide numerous benefits such as gaining practical work experience, building professional networks, determining suitable career paths, and improving job prospects. Internships offer a valuable opportunity for students, graduates, and professionals to succeed in their careers and achieve their professional goals.</p>
-						<p style="font-size:25px;">We have partnership with Turkey, Egypt and Bahrain</p>
-						<p style="font-size:25px;">Explore more opportunity from the link below:</p>
+						<p class="fontheader" style="margin-bottom:2rem;margin:0;padding:0;">Global Talent</p>
+						<p>Internships provide numerous benefits such as gaining practical work experience, building professional networks, determining suitable career paths, and improving job prospects. Internships offer a valuable opportunity for students, graduates, and professionals to succeed in their careers and achieve their professional goals.</p>
+						<p>We have partnership with Turkey, Egypt and Bahrain</p>
+						<p>Explore more opportunity from the link below:</p>
 						<input type="button" class="GTa-btn" onclick="window. open('https://aiesec.org/global-talent', '_blank')" value="Explore Internship">
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="scroll s-six" data-section-name="s-six">
+		<section onclick="openhdr(1)" class="scroll s-six" data-section-name="s-six" id="s-six">
 			<div class="container">
 				<div class="row" style="text-align:left;">
 					<div class="col-lg-12">
-						<p style="font-size:45px;font-weight:bold;margin:0;padding:0;">Global Teacher </p>
-						<p style="opacity:0;margin:0;padding:0;">h practical experiencesof many kinds, including internships, volunteering opportunities, and more.</p>
-						<p style="font-size:25px;">Teaching provides numerous benefits, such as the opportunity to make a positive impact on students' lives, access to ongoing professional development, personal and professional growth, and job security. Bahrain's education system is highly respected, and the work of teachers is appreciated. Additionally, teachers in Egypt work in a multicultural environment, have opportunities to learn about Bahraini culture, and can participate in various community events and activities.</p>
-						<p style="font-size:25px;">We have partnership with Turkey, Egypt and Bahrain</p>
-						<p style="font-size:25px;">Explore more opportunity from the link below:</p>
+						<p class="fontheader" style="margin-bottom:2rem;margin:0;padding:0;">Global Teacher </p>
+						<p>Teaching provides numerous benefits, such as the opportunity to make a positive impact on students' lives, access to ongoing professional development, personal and professional growth, and job security. Bahrain's education system is highly respected, and the work of teachers is appreciated. Additionally, teachers in Egypt work in a multicultural environment, have opportunities to learn about Bahraini culture, and can participate in various community events and activities.</p>
+						<p>We have partnership with Turkey, Egypt and Bahrain</p>
+						<p>Explore more opportunity from the link below:</p>
 						<input type="button" class="GTe-btn" onclick="window. open('https://aiesec.org/global-teacher', '_blank')" value="Explore Internship">
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="scroll s-seven" data-section-name="s-seven">
+		<section onclick="openhdr(1)" class="scroll s-seven" data-section-name="s-seven" id="s-seven">
 			<div class="container">
 				<div class="row" style="text-align:left;">
 					<div class="col-lg-12">
-						<p style="font-size:45px;font-weight:bold;margin:0;padding:0;">AIESEC Member</p>
-						<p style="opacity:0;margin:0;padding:0;">h practical experiencesof many kinds, including internships, volunteering opportunities, and more.</p>
-						<p style="font-size:25px;">Being an AIESEC member offers several benefits such as leadership development, international exposure, professional development, networking opportunities, personal growth, and community impact. Members can gain practical work experience, develop new skills, and build relationships with like-minded individuals from diverse backgrounds. They can also contribute to social and economic development and make a positive impact on the world.</p>
-						<p style="font-size:25px;">We recruiting in February or August, Join Us</p>
-						<!--<p style="font-size:25px;">Become a Member by the link below:</p>
+						<p class="fontheader" style="margin-bottom:2rem;margin:0;padding:0;">AIESEC Member</p>
+						<p>Being an AIESEC member offers several benefits such as leadership development, international exposure, professional development, networking opportunities, personal growth, and community impact. Members can gain practical work experience, develop new skills, and build relationships with like-minded individuals from diverse backgrounds. They can also contribute to social and economic development and make a positive impact on the world.</p>
+						<p>We recruiting in February or August, Join Us</p>
+						<!--<p>Become a Member by the link below:</p>
 						<input type="button" class="GTe-btn" onclick="window. open('#', '_blank')" value="">-->
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="scroll s-eght" data-section-name="s-eght">
+		<section onclick="openhdr(1)" class="scroll s-eght" data-section-name="s-eght" id="s-eght">
 			<div class="container" style="padding:4%;">
 				<div class="row" >
 					<div class="col-lg-12">
-						<p style="font-size:45px;font-weight:bold;margin:0;">Our Structure</p>
+						<p class="fontheader" style="margin:0;">Our Structure</p>
 						<div class="strc-hld" style="margin:1%;">
 							<div class="ele-hld">
 								<div class="lcp">
 									<img src="pic/10.png" alt="LCP" style="opacity:0" width="100%">
 								</div>
-								<p style="font-size:20px;"><b>LCP</B></p>
-								<p style="font-size:18px;">Kaouther Belkaceme</p>
+								<p><b>LCP</B></p>
+								<p>Kaouther Belkaceme</p>
 							</div>
 						</div>
 						<div class="strc-hld">
@@ -219,29 +225,29 @@
 								<div class="lcvpmk">
 									<img src="pic/7.png" alt="LCVP MKY&PD" style="opacity:0" width="100%">
 								</div>
-								<p style="font-size:20px;"><b>LCVP MKT&PD</b></p>
-								<p style="font-size:18px;">Abdelkarim Khelfaoui</p>
+								<p><b>LCVP MKT&PD</b></p>
+								<p>Abdelkarim Khelfaoui</p>
 							</div>
 							<div class="ele-hld">
 								<div class="lcvpfl">
 									<img src="pic/9.png" alt="LCVP FnL&TM" style="opacity:0" width="100%">
 								</div>
-								<p style="font-size:20px;"><b>LCVP FnL&TM</b></p>
-								<p style="font-size:18px;">Hicham Khelfaoui</p>
+								<p><b>LCVP FnL&TM</b></p>
+								<p>Hicham Khelfaoui</p>
 							</div>
 							<div class="ele-hld">
 								<div class="lcvpgx">
 									<img src="pic/11.png" alt="LCVP OGX&MXP" style="opacity:0" width="100%">
 								</div>
-								<p style="font-size:20px;"><b>LCVP OGX&MXP</b></p>
-								<p style="font-size:18px;">Nidhal Merbah</p>
+								<p><b>LCVP OGX&MXP</b></p>
+								<p>Nidhal Merbah</p>
 							</div>
 							<div class="ele-hld">
 								<div class="lcvpea">
 									<img src="pic/8.png" alt="LCVP EwA" style="opacity:0" width="100%">
 								</div>
-								<p style="font-size:20px;"><b>LCVP EwA</b></p>
-								<p style="font-size:18px;">Rokaya Ayache</p>
+								<p><b>LCVP EwA</b></p>
+								<p>Rokaya Ayache</p>
 							</div>
 						</div>
 					</div>
@@ -249,14 +255,14 @@
 			</div>
 		</section>
 
-		<section class="scroll s-nine" data-section-name="s-nine">
+		<section onclick="openhdr(1)" class="scroll s-nine" data-section-name="s-nine" id="s-nine">
 			<div class="container">
-				<p style="font-size:45px;font-weight:bold;">Contact Us</p>
+				<p class="fontheader">Contact Us</p>
 				<div class="rowx">
 					<div class="piccon">
 						<img src="pic/2.png" alt="aiesec in ouargla, El Wahat" width="100%">
 					</div>
-					<div style="display:flex;">
+					<div class="ontuctus" style="display:flex;">
 						<div class="textcon" style="margin-left:7%">
 							<p>LCP</p>
 							<p>LCVP MKT&PD </p>
@@ -278,13 +284,18 @@
 			</div>
 		</section>
 
-		<section class="scroll s-ten" data-section-name="s-ten">
+		<section onclick="openhdr(1)" class="scroll s-ten" data-section-name="s-ten" id="s-ten">
 			<div class="container">
-				<p style="font-size:45px;font-weight:bold;">Follow US</p>
-				<div class="rowx">
-					<div style="display:flex; justify-content:center;width:10%;cursor: pointer;">
-						<div onclick="window. open('https://www.facebook.com/groups/1416620452135761', '_blank')" style="display:block;">
-							<img src="pic/fb.png" alt="facebook" width="80%">
+				<p class="fontheader">Follow US</p>
+				<div class="rowy">
+					<div style="display:flex; justify-content:space-around;width:70%;cursor: pointer;">
+						<div style="display:flex; justify-content:space-around;width:50%;cursor: pointer;">
+							<div onclick="window. open('https://www.facebook.com/groups/1416620452135761', '_blank')" style="margin: 0.5rem;display:flex; justify-content:center;;">
+								<img src="pic/fb.png" alt="facebook" width="100%">
+							</div>
+							<div onclick="window. open('https://www.instagram.com/aiesecinouargla/?hl=en', '_blank')" style="margin: 0.5rem;display:flex; justify-content:center;;">
+								<img src="pic/ig.png" alt="facebook" width="100%">
+							</div>
 						</div>
 					</div>
 					<div class="piccon">

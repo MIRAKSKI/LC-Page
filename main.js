@@ -91,17 +91,21 @@ function applyScroll() {
 function screenCheck() {
   var deviceAgent = navigator.userAgent.toLowerCase();
   var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
-  if (agentID || $(window).width() <= 1024) {
+  if (agentID || $(window).width() <= 930) {
     // its mobile screen
     $.scrollify.destroy();
     $('section').removeClass('scroll').removeAttr('style');
     $.scrollify.disable();
+    //document.getElementsByClassName("normalx")[0].style.display = "none";
+    //document.getElementsByClassName("abnormalx")[0].style.display = "grid";
     document.getElementsByClassName('pagination')[0].style.display = "none";
   } else {
     // its desktop
     $('section').addClass('scroll');
     applyScroll();
     $.scrollify.enable();
+    //document.getElementsByClassName("normalx")[0].style.display = "flex";
+    //document.getElementsByClassName("abnormalx")[0].style.display = "none";
     document.getElementsByClassName('pagination')[0].style.display = "grid";
   }
 }
@@ -118,11 +122,13 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  }
-  else {
-    document.getElementById("navbar").style.top = "-12%";
+  if ($(window).width() > 930) {
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    }
+    else {
+      document.getElementById("navbar").style.top = "-12%";
+    }
   }
 prevScrollpos = currentScrollPos;
 }
@@ -162,4 +168,61 @@ function openviwer(ing) {
 }
 setTimeout(function() {
   scrooll(1);
-},500)
+},500);
+var check = 0;
+function openhdr(sdkg) {
+  if (sdkg==1) {
+    document.getElementsByClassName('header')[0].style.left = "-100%";
+    check=0;
+  }
+  else if (sdkg==2) {
+    if (check==0) {
+      document.getElementsByClassName('header')[0].style.left = "0";
+      check=1;
+    }
+    else {
+      document.getElementsByClassName('header')[0].style.left = "-100%";
+      check=0;
+    }
+  }
+}
+function topFunction() {
+  if ($(window).width() < 930) {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+}
+function jumponit(sesk) {
+  if ($(window).width() < 930) {
+    if (sesk==1) {
+      window.location.hash = "#s-one"
+    }
+    else if (sesk==2) {
+      window.location.hash = "#s-two"
+    }
+    else if (sesk==3) {
+      window.location.hash = "#s-three"
+    }
+    else if (sesk==4) {
+      window.location.hash = "#s-foor"
+    }
+    else if (sesk==5) {
+      window.location.hash = "#s-five"
+    }
+    else if (sesk==6) {
+      window.location.hash = "#s-six"
+    }
+    else if (sesk==7) {
+      window.location.hash = "#s-seven"
+    }
+    else if (sesk==8) {
+      window.location.hash = "#s-eght"
+    }
+    else if (sesk==9) {
+      window.location.hash = "#s-nine"
+    }
+    else {
+      window.location.hash = "#s-ten"
+    }
+  }
+}
